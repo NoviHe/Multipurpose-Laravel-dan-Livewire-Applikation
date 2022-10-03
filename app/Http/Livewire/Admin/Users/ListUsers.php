@@ -2,24 +2,23 @@
 
 namespace App\Http\Livewire\Admin\Users;
 
+use App\Http\Livewire\Admin\AdminComponent;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
-use Livewire\Component;
+use Livewire\WithPagination;
 
-class ListUsers extends Component
+class ListUsers extends AdminComponent
 {
+
     public $field = [];
-
     public $user;
-
     public $showEditModal = false;
-
     public $userIdBeingRemoved = null;
 
     public function addNew()
     {
         $this->field = [];
-        $this->showEditModal = true;
+        $this->showEditModal = false;
         $this->dispatchBrowserEvent('show-form');
     }
     public function createUser()
@@ -68,7 +67,7 @@ class ListUsers extends Component
     }
     public function render()
     {
-        $users = User::latest()->paginate();
+        $users = User::latest()->paginate(5);
         return view('livewire.admin.users.list-users', ['users' => $users]);
     }
 }

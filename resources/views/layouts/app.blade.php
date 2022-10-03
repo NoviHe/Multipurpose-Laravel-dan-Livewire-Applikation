@@ -19,6 +19,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{ asset('backend/dist/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/plugins/toastr/toastr.min.css') }}">
 
+    <link rel="stylesheet"
+        href="{{ asset('backend/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
     @stack('style')
     @livewireStyles
 </head>
@@ -64,6 +66,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ asset('backend/dist/js/adminlte.min.js') }}"></script>
 
     <script src="{{ asset('backend/plugins/toastr/toastr.min.js') }}"></script>
+    <script src="{{ asset('backend/plugins/moment/moment.min.js') }}"></script>
+
+    <script src="{{ asset('backend/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
     @stack('script')
 

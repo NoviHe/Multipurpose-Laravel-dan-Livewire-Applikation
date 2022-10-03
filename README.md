@@ -100,6 +100,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- * [![Svelte][Svelte.dev]][Svelte-url] -->
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Livewire][Livewire.com]][Livewire-url]
 <!-- * [![JQuery][JQuery.com]][JQuery-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -122,19 +123,27 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Open code editor / terminal
 2. Clone the repo
    ```sh
    git clone https://github.com/NoviHe/Multipurpose-Laravel-dan-Livewire-Applikation.git
    ```
-3. Install NPM packages
+3. open this project to code editor
+4. Install composer / update composer
    ```sh
-   npm install
+   composer update / composer install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+5. Setting ENV `.env`
+   ```sh
+      DB_DATABASE=laravel_livewire
+      DB_USERNAME=root
+      DB_PASSWORD=root
    ```
+
+6. migrate your DB
+    ```sh
+      php artisan migrate
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,5 +252,7 @@ Project Link: [https://github.com/NoviHe/Multipurpose-Laravel-dan-Livewire-Appli
 [Laravel-url]: https://laravel.com
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
+[Livewire.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Livewire-url]: https://https://laravel-livewire.com/
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 

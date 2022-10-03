@@ -46,8 +46,9 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <a href="{{ route('admin.appointment') }}"
+                        class="nav-link {{ request()->is('admin/appointment') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-calendar-alt"></i>
                         <p>
                             Appointments
                         </p>
@@ -72,7 +73,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-power-off"></i>
                         <p>
                             Logout
                         </p>
